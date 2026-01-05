@@ -15,12 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mwangwear.vercel.app/"),
   title: "Mwangwear",
   description: "Mwangwear – Prime Time, Every Time",
   openGraph: {
     title: "Mwangwear",
     description: "Mwangwear – Prime Time, Every Time.",
-    url: "https://mwangwear.com",
+    url: "https://mwangwear.vercel.app/",
     siteName: "Mwangwear",
     images: [
       {
