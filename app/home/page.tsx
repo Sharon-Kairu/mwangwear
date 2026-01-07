@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Hero from '../component/Hero'
 import WatchCard from '../component/WatchCard'
-import { getWatches } from '../lib/getWatches'
+import { getLatestWatches } from '../lib/getLatestWatches'
 import { FiAward, FiTag, FiHeadphones } from 'react-icons/fi'
 
 const why = [
@@ -34,7 +34,7 @@ const Page = () => {
   useEffect(() => {
     const fetchWatches = async () => {
       try {
-        const data = await getWatches()
+        const data = await getLatestWatches()
         setWatches(data)
       } catch (error) {
         console.error('🔥 Firestore error:', error)

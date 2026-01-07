@@ -4,5 +4,6 @@ export interface Watch {
   price: number;
   image: string;
   description: string;
-  colors: string[];  
+  colors: string[]; 
+  time?: number 
 }

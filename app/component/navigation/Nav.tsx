@@ -52,7 +52,7 @@ const Nav = ({ openNav }: Props) => {
       </div>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex gap-6 lg:mr-16">
+      <div className="hidden lg:flex gap-6 lg:mr-16">
         {pages.map((page) => {
           const href = page.url === 'home' ? '/' : `/${page.url}`
 
@@ -92,7 +92,7 @@ const Nav = ({ openNav }: Props) => {
       {/* Mobile Menu Icon */}
       <FiMenu
         onClick={openNav}
-        className="md:hidden text-white text-3xl cursor-pointer"
+        className="lg:hidden text-white text-3xl cursor-pointer"
       />
     </div>
   )
